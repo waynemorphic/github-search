@@ -7,9 +7,13 @@ import { Engine } from '../engine'; //imported engine blueprint class
   styleUrls: ['./search-engine.component.css']
 })
 export class SearchEngineComponent implements OnInit {
-  
+
   //engine property with empty Engine class array
   engine!:Engine[];
+
+  //eng property with new Engine class that constructs the type strings that are properties of the 
+  // Engine blueprint class
+  eng  = new Engine ("", "");
 
   constructor() { }
 
