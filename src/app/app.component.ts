@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Engine } from './engine';
 
 @Component({
   selector: 'app-root',
@@ -7,6 +6,6 @@ import { Engine } from './engine';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-
-  title = 'github-search';
+  
+title = 'github-search';
 }
