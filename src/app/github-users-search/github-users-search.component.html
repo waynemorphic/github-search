@@ -1,0 +1,17 @@
+<div>
+    <!-- <form id="search uName" (ngSubmit)="searchUsername()" #usernameForm="ngForm"> -->
+        <div class="form-group">
+            <h3>Find Github User</h3>
+            <input type="search" class="form-control" placeholder="GitHub Username" aria-label="GitHub Username"
+                aria-describedby="button-addon2" #search>
+            <button (click)='searchUser(search.value)' class="btn btn-primary" type="submit" id="button-addon2"><a href="usersPage" style="color:black"></a>Search</button>
+
+            <p>
+                {{ user.followers }} 
+            </p>
+        </div>
+   
+</div>
+<div>
+   
+</div>
