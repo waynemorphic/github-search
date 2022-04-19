@@ -1,0 +1,19 @@
+<div>
+     
+        <!--when the button is clicked, the showRepo method should show the repository in a new page-->
+        <div class="form-group">
+            <h3>Find Github Repo</h3>
+            <input type="search" class="form-control" placeholder="GitHub Repository Name" aria-label="GitHub Repository"
+                aria-describedby="button-addon2" #search>
+            <button (click)='searchRepo(search.value)' class="btn btn-primary" type="submit" id="button-addon2">Search</button>
+             <!--when the button is clicked, it should call a searchRepo event that searches for the repository name-->
+             <p>
+               this is {{ repositories.total_count }}, {{ repositories.name}}
+            </p>
+      
+        </div>
+        <p>
+             this is {{ repositories.name}}
+        </p>
+      
+</div> 
