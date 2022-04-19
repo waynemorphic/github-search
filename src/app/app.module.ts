@@ -10,6 +10,7 @@ import { GithubUsersSearchComponent } from './github-users-search/github-users-s
 import { GithubRepositoriesSearchComponent } from './github-repositories-search/github-repositories-search.component';
 import { GithubUsersServiceService } from './github-users-service.service';
 import { UserResultComponent } from './user-result/user-result.component';
+import { RepositoryResultComponent } from './repository-result/repository-result.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { UserResultComponent } from './user-result/user-result.component';
     GithubUsersSearchComponent,
     GithubRepositoriesSearchComponent,
     UserResultComponent,
+    RepositoryResultComponent,
     
   ],
   imports: [
