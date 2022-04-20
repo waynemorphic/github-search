@@ -37,7 +37,7 @@ export class GithubUsersServiceService {
    
       }
       
-      this.http.get<searchResponse>(environment.APIurl + '/users/' + username).subscribe(response=>{
+      this.http.get<searchResponse>(environment.url + '/users/' + username).subscribe(response=>{
         this.user.login = response.login;
         this.user.name = response.name;
         this.user.followers = response.followers;
@@ -49,7 +49,7 @@ export class GithubUsersServiceService {
         // this.repositories.description = response.description
       })
       
-      this.http.get<any>(environment.APIurl + '/users/' + username + '/repos').
+      this.http.get<any>(environment.url + '/users/' + username + '/repos').
       subscribe(items => {
         for (let i = 0; i < items.length; i++){
         this.userData = new Repositories(
