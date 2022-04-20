@@ -1,8 +1,46 @@
+<div class="w3-container">
+  <div class="w3-bar">
+    <a href="https://github.com/waynemorphic" (ngSubmit)='getProfile()'
+      class="w3-bar-item w3-button w3-hover-blue w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-white w3-right">View
+      My Profile</a>
+    <a href="https://github.com/"
+      class="w3-bar-item w3-button w3-hover-blue w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-white w3-right">GitHub</a>
+    <a href="#"
+      class="w3-bar-item w3-button w3-hover-blue w3-border-white w3-bottombar w3-hover-border-blue w3-hover-text-white w3-right">Home</a>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <h3>GitHub
+        <span><i class="fa-brands fa-github"></i></span>
+        Search
+      </h3>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <form (ngSubmit)='searchGithub()' #githubForm='ngForm' name="githubForm">
+    <div class="row"> 
+      <div class="col">
+        <input type="text" class="form-control input-lg mb15 user-input" id="username" [(ngModel)]="username"
+          name="githubSearching" placeholder="Enter Github Username">
+        <button type="submit" class="btn btn-primary btn-lg btn-block" id="results" routerLink="/results">Search</button>
+      </div>
+    </div>
+  </form>
+  <router-outlet></router-outlet>
+</div>
+
 <!-- This is the landing page without the navigation bars -->
 
-<div class="container">
+<!-- <div class="container">
   <app-github-users-search></app-github-users-search>
 </div>
 <div class="container">
   <app-github-repositories-search></app-github-repositories-search>
-</div>
+</div> -->
+
+<!-- <div class="container">
+  <app-github-users-search></app-github-users-search>
+</div> -->

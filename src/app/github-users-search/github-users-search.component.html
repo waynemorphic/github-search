@@ -1,17 +1,48 @@
-<div>
+<div class="container">
     <!-- <form id="search uName" (ngSubmit)="searchUsername()" #usernameForm="ngForm"> -->
-        <div class="form-group">
-            <h3>Find Github User</h3>
-            <input type="search" class="form-control" placeholder="GitHub Username" aria-label="GitHub Username"
-                aria-describedby="button-addon2" #search>
-            <button (click)='searchUser(search.value)' class="btn btn-primary" type="submit" id="button-addon2"><a href="usersPage" style="color:black"></a>Search</button>
-
-            <p>
-                {{ user.followers }} 
-            </p>
+    <!-- <div class="form-group">
+        <div class="row">
+            <div class="col">
+                <h3>Find Github User</h3>
+                <input type="search" class="form-control" placeholder="GitHub Username" aria-label="GitHub Username"
+                    aria-describedby="button-addon2" #search>
+                <button (click)='searchUser(username)' class="btn btn-primary" type="submit" id="button-addon2"><a
+                        href="usersPage" style="color:black"></a>Search</button>
+            </div>
+            <div class="col">
+                <div class="form-group">
+                    <h3>Find Github Repo</h3>
+                    <input type="search" class="form-control" placeholder="GitHub Repository Name"
+                        aria-label="GitHub Repository" aria-describedby="button-addon2" #search>
+                    <button (click)='searchRepo(search.value)' class="btn btn-primary" type="submit"
+                        id="button-addon2">Search</button> -->
+                    <!--when the button is clicked, it should call a searchRepo event that searches for the repository name-->
+                <!-- </div>
+            </div>
         </div>
-   
-</div>
-<div>
-   
-</div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="{{ user.avatar_url }}" alt="avatar">
+                <p>Username: {{ user.login }}</p>
+                <p>Followers: {{ user.followers }}</p>
+                <p>Following: {{ user.following }}</p>
+                <p>Repositories: {{ user.public_repos }} </p>
+                <p>Date Created: {{ user.created_at }}</p>
+                <p>Date Updated: {{ user.updated_at }}</p>
+            </div>
+            <div class="row">
+               when the button is clicked, the showRepo method should show the repository in a new page
+                <div *ngFor='let repository of repositoryData'>
+                    <p>Number of Repositories Found: {{ repositories.total_count }} </p>
+                    <p>Username: {{ repositories.login }}</p>
+                    <p>Repository Name: {{ repositories.name }}</p>
+                    <p>Forks: {{ repositories.forks_count }}</p>
+                    <p>Stars: {{ repositories.stargazers_count }}</p>
+                    <p>Date Created: {{ repositories.created_at }}</p>
+                    <p>Date Updated: {{ repositories.updated_at }}</p>
+                </div>
+            </div>
+        </div>
+    </div> --> 

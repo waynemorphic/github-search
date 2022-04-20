@@ -1,0 +1,43 @@
+<div class="w3-card-4">
+    <!--add the repositories results here-->
+    <header class="w3-container w3-black">
+        <h3 style="text-align:center; color: white">GitHub Account Found</h3>
+    </header>
+    <!-- <img src=" {{user.avatar_url}}"> -->
+    <div class="w3-container w3-sand">
+        <img src=" {{user.avatar_url}}" class="w3-left w3-circle">
+        <h4>GitHub Username: {{ user.login}}</h4>
+        <h4>Followers: {{ user.followers }}</h4>
+        <h4>Following: {{ user.following }}</h4>
+        <h4>Repositories: {{ user.public_repos }}</h4>
+        <h4>Date Created: {{ user.created_at | dateFormat }}</h4>
+        <h4>Date Updated: {{ user.updated_at | dateFormat}}</h4>
+    </div>
+</div>
+<div class="w3-card-4">
+    <header class="w3-container w3-black">
+        <h3 style="text-align: center;">
+            Repositories Results
+        </h3>
+    </header>
+    <div class="w3-container w3-sand" *ngFor="let repo of repositoryData, let i = index">
+        <!-- <div class="row">
+        <div class="col"> -->
+        <p>
+            Name of Repository: {{repo.name}} <br>
+        </p>
+        <p>
+            Repository Description: {{repo.description}}
+        </p>
+        <p>
+            Pushed on {{ repo.pushed_at | dateFormat }}<br> Days since Last Push: {{ repo.updated_at | countingDates}}
+        </p>
+        <p>
+            <span><i class="fa-solid fa-code-fork fa-xl"> </i>: {{ repo.forks_count }}</span> <br><br>
+            <span><i class="fa-solid fa-star fa-xl"> </i>: {{ repo.stargazers_count }}</span>
+        </p>
+    </div>
+</div>
+<!-- </div>
+
+</div> -->

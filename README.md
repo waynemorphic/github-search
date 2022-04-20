@@ -1,3 +1,43 @@
+
+## Table of Contents
+Description
+Technology Used
+References
+Copyright & Licence Info
+Link to live site
+Authors Info
+Angular terminologies for developers
+
+## Description
+This is a web application developed with Angular CLI that allows users to search for GitHub usernames and repositories and display the results depending on the matchability of the name entered and the names in github. This is a search engine for github repositories and usernames.
+
+## The contents of the website are;
+
+1. Search bar 
+2. Search buttons
+3. Navigation components to redirecting user to the GitHub website
+4. Navigation components to redirect user to the author's profile in GitHub
+
+## Technology Used
+The languages and frameworks used to develop the quotes web application are Angular, Bootstrap, HTML, Javascript, Typescript and CSS.
+
+## References
+w3schools
+
+## Copyright & Licence Info
+MIT Copyright (c) 2022 Wayne Kirimi
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Link to Live Site
+Live site
+
+Author's Information
+waynemorphic
 # GithubSearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.1.
