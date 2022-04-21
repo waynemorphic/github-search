@@ -1,12 +1,12 @@
 
 ## Table of Contents
-Description
-Technology Used
-References
-Copyright & Licence Info
-Link to live site
-Authors Info
-Angular terminologies for developers
+1. Description
+2. Technology Used
+3. References
+4. Copyright & Licence Info
+5. Link to live site
+6. Authors Info
+7. Angular terminologies for developers
 
 ## Description
 This is a web application developed with Angular CLI that allows users to search for GitHub usernames and repositories and display the results depending on the matchability of the name entered and the names in github. This is a search engine for github repositories and usernames.
